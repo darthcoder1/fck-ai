@@ -1,0 +1,17 @@
+[package]
+edition = "2018"
+name = "fck-ai"
+version = "0.1.0"
+
+[dependencies]
+getrandom = {version = "0.2", features = ["js"]}
+rocket = "0.4.10"
+rocket_contrib = "0.4.10"
+wasm-bindgen = "0.2.75"
+
+[[bin]]
+name = "rocket"
+path = "src/bin/rocket.rs"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
